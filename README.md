@@ -15,3 +15,22 @@ pip3 install --user neovim
 ```javascript
 yarn global add neovim
 ```
+
+4. Install coc extension
+
+```vim
+:CocInstall coc-tsserver coc-json coc-html coc-css coc-prettier coc-pyright coc-snippets
+```
+
+5. Install tailwindcss with language Server Protocol (lsp)
+
+```vim
+:LspInstall tailwindcss
+```
+
+6. Copy files to required directories
+
+```bash
+cp -rf ultisnips ~/.config/coc
+cp -rf * ~/.config/nvim
+```
