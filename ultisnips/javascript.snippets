@@ -1,0 +1,51 @@
+snippet rfc "ReactFunctionalComponent" a
+import React from 'react'
+
+export default function ${1}() {
+  return (
+    <div>$1</div>
+  )
+}
+endsnippet
+
+snippet rafc "ReactArrowFunctionalComponent" a
+import React from 'react'
+
+export default function ${1}() {
+  return (
+    <div>$1</div>
+  )
+}
+endsnippet
+
+snippet rfc "ReactFunctionalExportComponent" a
+import React from 'react'
+
+function ${1}() {
+  return (
+    <div>$1</div>
+  )
+}
+
+export default ${1}
+endsnippet
+
+snippet rafce "ReactArrowFunctionalExportComponent" a
+import React from 'react'
+
+const ${1} = () => {
+  return (
+    <div></div>
+  )
+}
+
+export default ${1}
+endsnippet
+
+snippet useStateSnippet "useState" a
+const [${1}, set${1}] = useState('')
+endsnippet
+
+snippet useRefSnippet "useRef" a
+const ${} = useRef(null)
+endsnippet
