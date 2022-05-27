@@ -10,9 +10,9 @@
     "html",
     "python"
   ],
+  "emmet.includeLanguages": {"vue-html": "html", "javascript": "javascriptreact", "typescript": "typescriptreact"},
   "eslint.autoFixOnsave": false,
   "eslint.autoFix": false,
-  "tsserver.enableJavascript": true,
   "suggest.completionItemKindLabels": {
     "keyword": "\uf1de",
     "variable": "\ue79b",
@@ -38,46 +38,5 @@
     "snippet": "\ue60b",
     "typeParameter": "\uf728",
     "default": "\uf29c"
-  },
-  "languageserver": {
-    "tailwind-lsp": {
-      "command": "tailwindcss-language-server",
-      "args": ["--stdio"],
-
-      "filetypes": [
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact",
-        "typescript.tsx",
-        "html"
-      ],
-
-      "rootPatterns": [
-        "tailwind.config.js",
-        "tailwind.config.ts",
-        "postcss.config.js",
-        "postcss.config.ts",
-        "package.json",
-        "node_modules",
-        ".git"
-      ],
-      "settings": {
-        "tailwindCSS": {
-          "validate": true,
-          "lint": {
-            "cssConflict": "warning",
-            "invalidApply": "error",
-            "invalidScreen": "error",
-            "invalidVariant": "error",
-            "invalidConfigPath": "error",
-            "invalidTailwindDirective": "error",
-            "recommendedVariantOrder": "warning"
-          },
-          "classAttributes": ["class", "className", "classList", "ngClass"],
-          "experimental": {}
-        }
-      }
-    }
   }
 }

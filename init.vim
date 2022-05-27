@@ -14,9 +14,9 @@ syntax enable
 set fileencodings=utf-8,sjis,euc-jp,latin
 set encoding=utf-8
 set title
-set autoindent
+autocmd VimEnter * set autoindent
 set background=dark
-set nobackup
+"set nobackup
 set hlsearch
 set showcmd
 set cmdheight=1
@@ -24,8 +24,8 @@ set laststatus=2
 set scrolloff=10
 set expandtab
 "let loaded_matchparen = 1
-set shell=fish
-set backupskip=/tmp/*,/private/tmp/*
+set shell=zsh
+"set backupskip=/tmp/*,/private/tmp/*
 
 " incremental substitution (neovim)
 if has('nvim')
@@ -51,8 +51,10 @@ set shiftwidth=2
 set tabstop=2
 set ai "Auto indent
 set si "Smart indent
+le g:ambw=double
 set nowrap "No Wrap lines
 set backspace=start,eol,indent
+set mouse=a
 " Finding files - Search down into subfolders
 set path+=**
 set wildignore+=*/node_modules/*
@@ -64,6 +66,7 @@ autocmd InsertLeave * set nopaste
 set formatoptions+=r
 
 "}}}
+
 
 " Highlights "{{{
 " ---------------------------------------------------------------------
@@ -87,6 +90,7 @@ if &term =~ "screen"
 endif
 
 "}}}
+
 
 " File types "{{{
 " ---------------------------------------------------------------------

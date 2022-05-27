@@ -3,7 +3,7 @@
 set encoding=utf-8
 
 " TextEdit might fail if hidden is not set.
-set hidden
+" set hidden
 
 " Some servers have issues with backup files, see #649.
 set nobackup
@@ -13,7 +13,6 @@ set nowritebackup
 set cmdheight=2
 
 let g:coc_global_extensions = [
-  \ 'coc-tsserver',
   \ 'coc-json',
   \ 'coc-html',
   \ 'coc-css',
@@ -43,7 +42,7 @@ endif
 
 " coc-snippets
 " Use <C-e> for trigger snippet expand.
-imap <C-e> <Plug>(coc-snippets-expand)
+"imap <C-e> <Plug>(coc-snippets-expand)
 
 " Use <C-j> for select text for visual placeholder of snippet.
 vmap <C-j> <Plug>(coc-snippets-select)
