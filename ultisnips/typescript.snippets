@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function ${1}() {
   return (
-    <div>$1</div>
+    <div></div>
   )
 }
 endsnippet
@@ -11,11 +11,12 @@ endsnippet
 snippet rafc "ReactArrowFunctionalComponent" a
 import React from 'react'
 
-export default function ${1}() {
+export const ${1} = () => {
   return (
-    <div>$1</div>
+    <div></div>
   )
 }
+
 endsnippet
 
 snippet rfc "ReactFunctionalExportComponent" a
@@ -23,12 +24,11 @@ import React from 'react'
 
 function ${1}() {
   return (
-    <div>$1</div>
+    <div></div>
   )
 }
 
 export default ${1}
-
 endsnippet
 
 snippet rafce "ReactArrowFunctionalExportComponent" a
@@ -40,6 +40,85 @@ const ${1} = () => {
   )
 }
 
+
+export default ${1}
+endsnippet
+
+snippet useStateSnippet "useState" a
+const [${1}, set] = useState('')
+endsnippet
+
+snippet useRefSnippet "useRef" a
+const ${} = useRef(null)
+endsnippet
+
+snippet useEffectSnippet "useEffect" a
+useEffect(() => {
+  ${1}
+
+  return () => {
+    ${2}
+  }
+}, [${3}])
+
+endsnippet
+
+snippet rnf "ReactNativeFunctionComponent" a
+import { View, Text } from 'react-native'
+import React from 'react'
+
+export default function ${1}}() {
+  return (
+    <View>
+      <Text></Text>
+    </View>
+  )
+}
+endsnippet
+
+snippet rnfe "ReactNativeFunctionComponentExport" a
+import { View, Text } from 'react-native'
+import React from 'react'
+
+const ${1} = () => {
+  return (
+    <View>
+      <Text></Text>
+    </View>
+  )
+}
+
+export default ${1}
+endsnippet
+
+snippet rnfs "ReactNativeFunctionComponentWithStyleSheet" a
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+
+const ${1} = () => {
+  return (
+    <View>
+      <Text></Text>
+    </View>
+  )
+}
+
 export default ${1}
 
+const styles = StyleSheet.create({})
+endsnippet
+
+snippet rnfes "ReactNativeFunctionComponentExportWithStyleSheet" a
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+
+export default function ${1}() {
+  return (
+    <View>
+      <Text></Text>
+    </View>
+  )
+}
+
+const styles = StyleSheet.create({})
 endsnippet
